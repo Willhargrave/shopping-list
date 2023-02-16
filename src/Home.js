@@ -3,17 +3,21 @@ import Sushi from "./components/Sushi";
 import Card from "./components/Card";
 import "./styles/App.css";
 import { useState, createContext, useContext } from "react";
-import CartContext from "./components/CartContext";
-const Home = (props) => {
-    const count = useContext(CartContext);
+import ItemContext from "./components/ItemContext";
+const Home = () => {
+    const [cartItems, setCartItems] = useContext(ItemContext)
+    function handleClick() {
+        setCartItems(cartItems.concat({
+            product: Sushi
+          }))
+    }
     return (
         <div>
             <div className='Grid'>
-                {Sushi.map((sushi) => <Card key={sushi.id} sushi={sushi} handleClick={props.handleClick} />)}
+                {Sushi.map((sushi) => <Card key={sushi.id} sushi={sushi} handleClick={handleClick} />)}
             </div>
-            <h1><span>{count}</span></h1>
         </div>
-      
+
     )
 }
 

@@ -1,7 +1,7 @@
 import { useState, createContext } from "react";
 import ReactDOM from "react-dom/client";
 
-const CartContext = createContext();
+const ItemContext = createContext();
 
 
-export default CartContext;
+export default ItemContext;
