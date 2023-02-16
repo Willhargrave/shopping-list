@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
 import React, { Component } from 'react';
-
-class Navbar extends Component {
-    constructor(props) {
-        super(props);
-    }
-    render() {
+import { useState, createContext, useContext } from "react";
+import CartContext from "./CartContext";
+const Navbar = (props) => {
+const count = useContext(CartContext);
         return (
             <div>
                 <nav className="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
@@ -23,7 +21,7 @@ class Navbar extends Component {
                             </li>
                             <li className="nav-item">
                                 <Link to="/Checkout">
-                                    <a className="nav-link">Checkout</a>
+                                    <a className="nav-link">🛒{count}</a>
                                 </Link> 
                             </li>
                             <li className="nav-item">
@@ -35,6 +33,5 @@ class Navbar extends Component {
             </div>
         )
     };
-}
 
 export default Navbar;

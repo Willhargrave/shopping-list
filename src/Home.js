@@ -1,23 +1,19 @@
-import React, { useState } from "react";
+import React from "react";
 import Sushi from "./components/Sushi";
 import Card from "./components/Card";
-import "./styles/App.css"
-const Home = () => {
-    const [count, setCount] = useState(0);
-    function handleClick() {
-        setCount(prevCount => prevCount + 1)
-    }
+import "./styles/App.css";
+import { useState, createContext, useContext } from "react";
+import CartContext from "./components/CartContext";
+const Home = (props) => {
+    const count = useContext(CartContext);
     return (
         <div>
-            <header>
-                <h1>🥚<span>{count}</span></h1>
-                <h1>Don't pick the same guy twice!</h1>
-            </header>
-            <h1>Home</h1>
             <div className='Grid'>
-                {Sushi.map((sushi) => <Card key={sushi.id} sushi={sushi} handleClick={handleClick} />)}
+                {Sushi.map((sushi) => <Card key={sushi.id} sushi={sushi} handleClick={props.handleClick} />)}
             </div>
+            <h1><span>{count}</span></h1>
         </div>
+      
     )
 }
 
