@@ -1,4 +1,8 @@
+import { useContext } from "react";
+import ItemContext from "./ItemContext";
+
 const CheckoutOrder = () => {
+const [cartItems] = useContext(ItemContext)
     return (
         <div>
             <div class="container1">
@@ -6,7 +10,7 @@ const CheckoutOrder = () => {
                     <h2>Your order summary</h2>
                     <div class="item">
                         <div class="info">
-                         
+                         {cartItems.map}
                         </div>
                     </div>
 

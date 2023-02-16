@@ -3,6 +3,7 @@ import CheckoutMenu from "./components/CheckoutMenu";
 import CheckoutOrder from "./components/CheckoutOrder";
 import "./styles/Checkout.css"
 const Checkout = () => {
+
     return (
         <div className="Checkoutgrid">
             <CheckoutMenu />
