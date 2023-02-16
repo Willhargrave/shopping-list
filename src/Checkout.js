@@ -1,10 +1,12 @@
 import React from "react";
 import CheckoutMenu from "./components/CheckoutMenu";
-
+import CheckoutOrder from "./components/CheckoutOrder";
+import "./styles/Checkout.css"
 const Checkout = () => {
     return (
-        <div>
+        <div className="Checkoutgrid">
             <CheckoutMenu />
+            <CheckoutOrder />
         </div>
     )
 }
