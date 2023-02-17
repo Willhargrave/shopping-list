@@ -1,22 +1,20 @@
-import uniqid from 'uniqid'
-
 const Sushi = [
-    { key: "1", name: 'Salmon', img: require('../images/Salmon.jpg') },
-    { key: "2", name: 'Salmon Roe', img: require('../images/ikura.jpeg') },
-    { key: "3", name: 'Eel', img: require('../images/unagi.jpg') },
-    { key: "4", name: 'Shrimp', img: require('../images/shrimp.jpg') },
-    { key: "5", name: 'California Roll', img: require('../images/california-roll.jpg') },
-    { key: "6", name: 'Uni', img: require('../images/uni.jpeg') },
-    { key: "7", name: 'Tuna', img: require('../images/tuna.jpg') },
-    { key:" 8", name: 'Tamagoyaki', img: require('../images/tamagoyaki.jpg') },
-    { key: "9", name: 'Mackerel', img: require('../images/mackerel.jpg') },
-    { key: "10", name: 'Sanma', img: require('../images/sanma.jpg') },
-    { key: "11", name: 'Buri', img: require('../images/buri.jpg') },
-    { key: "12", name: 'Engawa', img: require('../images/engawa.jpg') },
-    { key: "13", name: 'Octopus', img: require('../images/octopus.jfif') },
-    { key: "14", name: 'Squid', img: require('../images/squid.jpg') },
-    { key: "15", name: 'Wagyu', img: require('../images/wagyu.webp') },
-    { key: "16", name: 'Horse', img: require('../images/horse.webp') }
+    { key: "1", desc: "Although it didn’t start out as a traditional sushi topping, salmon is currently one of the most popular options. Even if you aren't ordinarily a lover of fish, salmon is a perfect beginner step. It's loved for its mild, creamy flavor, medium-body softness, and the perfect harmony of flavor it has with the flavor of rice, soy sauce and wasabi.", name: 'Salmon', img: require('../images/Salmon.jpg') },
+    { key: "2", desc: "Ikura is a Japanese word meaning the roe of salmon, characterized by large, plump, orange eggs. While we usually think of Japanese cuisine as having a long and storied history, Ikura is rather new on the scene, originating in the latter half of the 20th century.Feb", name: 'Salmon Roe', img: require('../images/ikura.jpeg') },
+    { key: "3", desc: "Unagi is prized for is bold, rich taste. Although it can be served raw, unagi is typically grilled and basted with a sweet soy-based tare sauce.", name: 'Eel', img: require('../images/unagi.jpg') },
+    { key: "4", desc: "One of the ubiquitous sushi toppings, ebi come in many different varieties. The most popular are the large, fleshy and striped kuruma-ebi; the small, sweet and translucent ama-ebi; and the plump and sought-after botan-ebi. These are usually served peeled, with the tail left on.", name: 'Shrimp', img: require('../images/shrimp.jpg') },
+    { key: "5", desc: "California Rolls are a type of maki sushi (巻き寿司: rolled sushi) made by rolling ingredients such as crab and avocado in nori and seasoned rice. Although rolled sushi originates in Japan, California Rolls are not from Japan.", name: 'California Roll', img: require('../images/california-roll.jpg') },
+    { key: "6", desc: "Regarded as one of Japans three major delicacies, uni is prized for its buttery, oceanic flavor and creamy texture. Generally uni is bright orange in color. Uni nigiri may be topped with a dab of wasabi, as the bold sharpness compliments the rich sweetness of the meat.", name: 'Uni', img: require('../images/uni.jpeg') },
+    { key: "7", desc: "Tuna - and bluefin in particular - are a rather large type of fish, growing up to 3 meters (just over 9 feet). As a result, the texture and flavor varies greatly depending on where on the body the cut of fish is taken from.", name: 'Tuna', img: require('../images/tuna.jpg') },
+    { key: " 8", desc: "Often translated as Japanese rolled omelettes in English, it can be difficult for some to imagine egg atop rice! Made with eggs beaten together with dashi, soy sauce and mirin and then gently cooked as an omelette, their umami and mild sweetness make tamagoyaki a popular end to a fine sushi meal.", name: 'Tamagoyaki', img: require('../images/tamagoyaki.jpg') },
+    { key: "9", desc: "It has a meaty but light flavor to it. While it typically arrives served plain, it can also be lightly grilled to enhance its succulence, or sprinkled with the smallest pinch of salt to balance its richness.", name: 'Mackerel', img: require('../images/mackerel.jpg') },
+    { key: "10", desc: "Sanma has a stronger oceany flavor and can be eaten raw or aburi-style, with the oils in the meat making it extra succulent when braised.", name: 'Sanma', img: require('../images/sanma.jpg') },
+    { key: "11", desc: "Adult versions of the yellowtail fish are known as buri, and along with kampachi it is regarded as a luxury fish. Buri has a dense, creamy flavor, and the peak time to eat it in season is from December to February, as it accumulates fat for the winter.", name: 'Buri', img: require('../images/buri.jpg') },
+    { key: "12", desc: "The frilly edge from a flounder's tail fin, engawa is a treat to eat. The meat is thin, with a soft and slightly chewy texture, and has a buttery flavor. Engawa may be served as-is or aburi-style, seasoned with a sprinkle of salt or splash of ponzu (citrus and soy sauce).", name: 'Engawa', img: require('../images/engawa.jpg') },
+    { key: "13", desc: "Since raw octopus can be surprisingly bland compared to other seafood, often it will be first blanched (quickly plunged in boiling water, then dipped in ice water) when used as a topping. This process draws out the mild sweetness of the tako while imparting a slightly chewy texture.", name: 'Octopus', img: require('../images/octopus.jfif') },
+    { key: "14", desc: "Now while there are several types of squid in Japan, one of the most popular is surume ika. This is nearly always served on top of rice, scored lengthways, crossways or cross-hatched. Sometimes a shiso leaf will be placed between the ika and rice, as its aromatic flavor goes well with the soft, sweet squid.", name: 'Squid', img: require('../images/squid.jpg') },
+    { key: "15", desc: "A non-traditional but nevertheless quite popular topping for nigiri: wagyu beef. Famous around the world for its fatty marbling, which imparts a rich, sweet and savory flavor, when wagyu is served as a sushi topping it may also come raw or aburi style.", name: 'Wagyu', img: require('../images/wagyu.webp') },
+    { key: "16", desc: "One can choose to prepare basashi from the three different cuts it has. One variety is what they called “Toro”. It’s the finest part of the horse’s rib meat. It includes completely trimmed meat, without any excess fat on it.", name: 'Horse', img: require('../images/horse.webp') }
 ]
 
 export default Sushi;
