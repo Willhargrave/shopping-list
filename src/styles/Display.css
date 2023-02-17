@@ -1,7 +1,22 @@
+.sushi-container {
+    margin-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .sushi-card {
+    display: grid;
+    align-items: center;
+    justify-items: center;
     width: 300px;
     height: 300px;
+    border-color: black;
+    border: solid;
     background-color: white;
     box-shadow: 10px 5px 5px rgb(40, 39, 39);
 }
 
+.sushi-img {
+    width: 80%;
+    border-radius: 20px;
+}
