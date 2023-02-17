@@ -1,7 +1,7 @@
 import { useState, createContext, useContext } from "react";
 import ItemContext from "./ItemContext";
 
-const CartItemCard = (props) => {
+const CartItemCard = () => {
     const [cartitem] = useContext(ItemContext)
     return (
         <div>

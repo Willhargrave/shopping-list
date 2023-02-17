@@ -4,6 +4,7 @@ import CartItemCard from "./CartItemCard";
 import Sushi from "./Sushi";
 const CheckoutOrder = () => {
 const [cartItems] = useContext(ItemContext)
+
     return (
         <div>
             <div className="container1">
@@ -16,7 +17,7 @@ const [cartItems] = useContext(ItemContext)
                     </div>
                     <h4 className="ship">Shipping: FREE</h4>
                     <hr></hr>
-                    <h3 className="total">TOTAL: 60.91€</h3>
+                    <h3 className="total">￥{cartItems.length * 300}</h3>
                 </div>
             </div>
         </div>
