@@ -4,17 +4,11 @@ import Card from "./components/Card";
 import "./styles/App.css";
 import { useState, createContext, useContext } from "react";
 import ItemContext from "./components/ItemContext";
-const Home = () => {
-    const [cartItems, setCartItems] = useContext(ItemContext)
-    function handleClick() {
-        setCartItems(cartItems.concat({
-            product: Sushi
-          }))
-    }
+const Home = (e) => {
     return (
         <div>
             <div className='Grid'>
-                {Sushi.map((sushi) => <Card key={sushi.id} sushi={sushi} handleClick={handleClick} />)}
+                {Sushi.map((sushi) => <Card key={sushi.key} sushi={sushi} />)}
             </div>
         </div>
 
@@ -22,3 +16,4 @@ const Home = () => {
 }
 
 export default Home;
+

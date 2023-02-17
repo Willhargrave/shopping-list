@@ -1,16 +1,20 @@
 import "../styles/Card.css"
-
+import { Link } from "react-router-dom";
 const Card = (props) => {
     return (
         <div className="Card">
-            <button className='CardButton' onClick={() => props.handleClick(props.sushi.id)}>
+            <button className='CardButton'>
+                <Link to={`/${props.sushi.key}`}>
                 <img src={props.sushi.img} alt='' className='CardImg' />
                 <h2>{props.sushi.name}</h2>
-            </button>
-        </div>
+            </Link>
+        </button>
+        </div >
 
     )
 }
 
 
-export default Card;
+
+
+    export default Card;

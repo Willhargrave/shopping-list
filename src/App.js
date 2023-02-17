@@ -3,12 +3,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Checkout from "./Checkout";
 import Navbar from "./components/Navbar";
-import ItemContext from "./components/ItemContext";
+import { Provider } from "./components/ItemContext";
 const App = () => {
-  const [items, setItems] = useState([]);
   return (
     <div>
-      <ItemContext.Provider value={[items, setItems]}>
+      <Provider>
     <BrowserRouter>
      <Navbar/>
       <Routes>
@@ -16,7 +15,7 @@ const App = () => {
         <Route path="/Checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
-    </ItemContext.Provider>
+    </Provider>
     </div>
   );
 };
