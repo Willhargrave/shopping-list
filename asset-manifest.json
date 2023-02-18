@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/shopping-list/static/css/main.ed2f5a2a.css",
+    "main.js": "/shopping-list/static/js/main.bf06e010.js",
+    "static/js/787.b7d63c9a.chunk.js": "/shopping-list/static/js/787.b7d63c9a.chunk.js",
+    "static/media/unagi.jpg": "/shopping-list/static/media/unagi.cebf9ca4c65fee4cad26.jpg",
+    "static/media/sushi-background.avif": "/shopping-list/static/media/sushi-background.a7c7aad9fcaea9d939a5.avif",
+    "static/media/uni.jpeg": "/shopping-list/static/media/uni.50c85b6b18138ff1784c.jpeg",
+    "static/media/shrimp.jpg": "/shopping-list/static/media/shrimp.6a9d0642f002ea0ddee2.jpg",
+    "static/media/buri.jpg": "/shopping-list/static/media/buri.a4b80e71d7aec152123a.jpg",
+    "static/media/tamagoyaki.jpg": "/shopping-list/static/media/tamagoyaki.4bac95fa3dac96a3cfaf.jpg",
+    "static/media/california-roll.jpg": "/shopping-list/static/media/california-roll.89f7928801dd3aab45bf.jpg",
+    "static/media/sanma.jpg": "/shopping-list/static/media/sanma.22e37da13a465f9816b6.jpg",
+    "static/media/wagyu.webp": "/shopping-list/static/media/wagyu.f26b8f181b2767daf038.webp",
+    "static/media/mackerel.jpg": "/shopping-list/static/media/mackerel.a489355affae8fabfd68.jpg",
+    "static/media/tuna.jpg": "/shopping-list/static/media/tuna.208b9945b43017a20fe2.jpg",
+    "static/media/ikura.jpeg": "/shopping-list/static/media/ikura.4c82f188a363a010295e.jpeg",
+    "static/media/horse.webp": "/shopping-list/static/media/horse.358f23b934349bd584a2.webp",
+    "static/media/Salmon.jpg": "/shopping-list/static/media/Salmon.524bddee064b2eede126.jpg",
+    "static/media/squid.jpg": "/shopping-list/static/media/squid.5251d022990107996005.jpg",
+    "static/media/engawa.jpg": "/shopping-list/static/media/engawa.e2fb705eac5334ab00c1.jpg",
+    "static/media/octopus.jfif": "/shopping-list/static/media/octopus.a9e7d9f2f2097b1724cb.jfif",
+    "index.html": "/shopping-list/index.html",
+    "main.ed2f5a2a.css.map": "/shopping-list/static/css/main.ed2f5a2a.css.map",
+    "main.bf06e010.js.map": "/shopping-list/static/js/main.bf06e010.js.map",
+    "787.b7d63c9a.chunk.js.map": "/shopping-list/static/js/787.b7d63c9a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ed2f5a2a.css",
+    "static/js/main.bf06e010.js"
+  ]
+}
