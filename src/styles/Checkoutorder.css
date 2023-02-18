@@ -11,13 +11,15 @@
     margin-right: 2rem;
 }
 
+hr {
+    color: black;
+}
 
 .order-img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     box-shadow: 10px 5px 5px rgb(40, 39, 39);
-
 }
 
 .order-info {
@@ -26,7 +28,7 @@
     flex-direction: row;
     align-items: center;
     border-radius: 1.5rem;
-    box-shadow: 4px 3px 20px #3535358c;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
     margin: 1rem;
     padding: 15px;
 }

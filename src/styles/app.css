@@ -24,4 +24,5 @@ body {
     margin-right: 25%;
     flex-direction: column;
     opacity: 0.9;
+    padding: 15px;
 }

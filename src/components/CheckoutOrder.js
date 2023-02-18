@@ -9,7 +9,8 @@ const [cartItems] = useContext(ItemContext)
     return (
         <div>
             <div className="container1">
-                    <h2>Your order summary</h2>
+                    <h2>Thank You!</h2>
+                    <hr></hr>
                     <div>
                          <CartItemCard key={Sushi.id} sushi={Sushi} />
                     </div>
