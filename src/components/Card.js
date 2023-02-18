@@ -1,9 +1,6 @@
 import "../styles/Card.css"
 import { Link } from "react-router-dom";
-import { useContext } from "react";
-import ItemContext from "./ItemContext";
 const Card = (props) => {
-    const [cartItems, setCartItems] = useContext(ItemContext);
     return (
         <div className="Card">
             <button className='CardButton'>

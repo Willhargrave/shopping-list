@@ -13,7 +13,7 @@ const [cartItems] = useContext(ItemContext)
                     <div>
                          <CartItemCard key={Sushi.id} sushi={Sushi} />
                     </div>
-                    <h4 className="ship">Shipping: FREE</h4>
+                    <h4 className="ship">Delivery: FREE</h4>
                     <hr></hr>
                     <h3 className="total">￥{cartItems.length * 300}</h3>
             </div>
