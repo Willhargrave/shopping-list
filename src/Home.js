@@ -8,7 +8,8 @@ const Home = () => {
     return (
         <div>
             <div className="home-title">
-                <h1>Welcome to Sushi Server!</h1>
+                <h1>Welcome!</h1>
+                <p>🍣 Today's deal: EVERYTHING ￥300! 🍣</p>
             </div>
             <div className='Grid'>
                 {Sushi.map((sushi) => <Card key={sushi.key} sushi={sushi} />)}
