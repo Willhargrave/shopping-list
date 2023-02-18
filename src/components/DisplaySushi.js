@@ -22,7 +22,7 @@ function DisplaySushi() {
                     <img src={sushi.img} className="sushi-img"></img>
                     <p>{sushi.desc}</p>
                     <Link to={'/'}>
-                        <button onClick={handleSubmit}>Add to Cart</button>
+                        <button onClick={handleSubmit} className="sushi-btn">Add to Cart</button>
                     </Link>
                 </div>
             </div>
