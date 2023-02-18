@@ -1,8 +1,5 @@
 import React from "react";
 import "../styles/Checkoutmenu.css"
-import { Link } from "react-router-dom";
-import { useContext } from "react";
-import ItemContext from "./ItemContext";
 const CheckoutMenu = () => {
     const handleSubmit = () => {
         window.location.reload();
@@ -27,7 +24,6 @@ const CheckoutMenu = () => {
                                 <input type="text" className="inputbox" name="name" required />
                                 <p>Card Number</p>
                                 <input type="number" className="inputbox" name="card_number" id="card_number" required />
-
                                 <p>Card Type</p>
                                 <select className="inputbox" name="card_type" id="card_type" required>
                                     <option value="">--Select a Card Type--</option>

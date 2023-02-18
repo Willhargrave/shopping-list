@@ -7,7 +7,7 @@ const Card = (props) => {
     return (
         <div className="Card">
             <button className='CardButton'>
-                <Link to={`/${props.sushi.key}`}>
+                <Link to={`/${props.sushi.key}`} className="link">
                     <img src={props.sushi.img} alt='' className='CardImg' />
                     <h2>{props.sushi.name}</h2>
                 </Link>
