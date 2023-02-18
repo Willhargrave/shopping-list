@@ -1,12 +1,18 @@
 body {
     background-image: url("../images/sushi-background.avif");
-    background-size: 100%;
     background-repeat: no-repeat;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .Grid {
     margin-top: 60px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.home-title {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
