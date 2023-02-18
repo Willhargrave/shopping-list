@@ -1,9 +1,17 @@
 import React from "react";
 import "../styles/Checkoutmenu.css"
+import { Link } from "react-router-dom";
+import { useContext } from "react";
+import ItemContext from "./ItemContext";
 const CheckoutMenu = () => {
+    const handleSubmit = () => {
+        window.location.reload();
+        alert("Thanks for your order it'll be with you shortly")
+    }
+
     return (
         <div>
-                    <div className="card">
+                    <div className="menu-card">
                         <div className="leftside">
                             <img
                                 src="https://cdn.rarejob.com/material/jitsuyo_eikaiwa/2018/03/12170840/L7_Ch4_L9_Main.png"
@@ -36,7 +44,7 @@ const CheckoutMenu = () => {
                                     <input type="password" className="inputbox" name="cvv" id="cvv" required />
                                 </div>
                                 <p></p>
-                                <button type="submit" className="button">CheckOut</button>
+                                <button type="submit" className="button" onClick={handleSubmit}>CheckOut</button>
                             </form>
                         </div>
                     </div>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import React, { Component } from 'react';
 import { useState, createContext, useContext } from "react";
 import ItemContext from "./ItemContext";
-const Navbar = (props) => {
+const Navbar = () => {
     const [cartItems] = useContext(ItemContext)
     return (
         <div>

@@ -5,18 +5,17 @@ body {
 	box-sizing: border-box;
 }
 
-.card {
-	width: 60rem;
+.menu-card {
+	width: 50rem;
     margin: auto;
     background: white;
     position:center;
     align-self: center;
-    top: 50rem;
     border-radius: 1.5rem;
     box-shadow: 4px 3px 20px #3535358c;
     display:flex;
     flex-direction: row;
-    
+    margin-left: 2rem;
 }
 
 .leftside {

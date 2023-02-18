@@ -1,18 +1,18 @@
 import { useState, createContext, useContext } from "react";
 import ItemContext from "./ItemContext";
-
+import "../styles/Checkout.css"
+import "../styles/Checkoutorder.css"
 const CartItemCard = () => {
     const [cartitem] = useContext(ItemContext)
     return (
-        <div>
+        <div className="order-card">
             {cartitem.map((sushi, idx) => {
                 return (
                     <div key={idx}>
-                        <img src={sushi.product.img} alt='' />
-                        <div className="info">
-                            <h4>{sushi.product.name}</h4>
-                            <p className="quantity">{cartitem.name}</p>
-                        </div>
+                        <div className="order-info">
+                        <img src={sushi.product.img} alt='' className="order-img"/>
+                        <h4>{sushi.product.name}</h4>
+                        </div>    
                     </div>
                 )
             })}

@@ -1,4 +1,7 @@
 .Checkoutgrid {
+    top: 7.5rem;
+    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+

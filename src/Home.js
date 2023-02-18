@@ -3,7 +3,7 @@ import Sushi from "./components/Sushi";
 import Card from "./components/Card";
 import "./styles/App.css";
 
-const Home = (e) => {
+const Home = () => {
 
     return (
         <div>
