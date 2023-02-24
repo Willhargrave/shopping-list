@@ -21,7 +21,7 @@ function DisplaySushi() {
                     <h1>{sushi.name}</h1>
                     <img src={sushi.img} className="sushi-img"></img>
                     <p>{sushi.desc}</p>
-                    <Link to={'/'}>
+                    <Link to={'/shopping-list'}>
                         <button onClick={handleSubmit} className="sushi-btn">Add to Cart</button>
                     </Link>
                 </div>

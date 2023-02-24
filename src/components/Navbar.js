@@ -15,12 +15,12 @@ const Navbar = () => {
                 <div className="collapse navbar-collapse" id="navbarsExampleDefault">
                     <ul className="navbar-nav mr-auto">
                         <li className="nav-item active">
-                            <Link to="/">
+                            <Link to="/shopping-list">
                                 <a className="nav-link">Home</a>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link to="/Checkout">
+                            <Link to="shopping-list/Checkout">
                                 <a className="nav-link">🛒{cartItems.length}</a>
                             </Link>
                         </li>
